@@ -8,12 +8,18 @@ https://github.com/TheArtling/intercom-conversations-export
 
 ## Configuration
 
-First, create a `settings.py` file based on the `settings.py.sample` file.
+First, create a `settings.py` file based on the `settings.py` file.
 
 Set your `INTERCOM_TOKEN` and set the `OUTPUT_PATH` setting to an absolute path.
-This is where this script will store all it's output.
+This is where this script will store all its output.
 
 ## Fetching the raw data
+
+Install all requirements in the `requirements.txt` file using
+
+```bash
+pip3 install -r requirements.txt
+```
 
 Then run `python fetcher.py` - this script will download paginated lists where
 each page contains information about 20 conversations. The script will save one
@@ -24,8 +30,8 @@ object for each conversation into the folder `raw_data/single_conversations`.
 
 ## Extracting the conversations
 
-Finally, run `python extractor.py` - this script will read the previously
-downloaded conversation JSON objects and save them all as text-files. Each
+Finally, run `python extractor.py` - This script will read the previously
+downloaded conversation JSON objects and save them all as text files. Each
 conversation will have the date as the filename and will be stored in a folder
 that matches the user's email address (if known) or the user ID. If a
 conversation contains images, these will be downloaded and put into the same
@@ -46,5 +52,6 @@ Landed on https://theartling.com/en/art/?country=japan
 09/01/2020 18:37 PM | Operator - admin : Action - assignment
 ```
 TODO:
-- Add search by Year/Month/Day
-- Add anonymisation feature on folder names
+- Add search by Year/Month/Day.
+- Add anonymisation feature on folder names.
+- Increase pages from 20 to 150.
