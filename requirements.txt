@@ -1,0 +1,9 @@
+requests
+bs4
+html5lib
+urllib
+pathlib
+datetime
+json
+os
+requests
