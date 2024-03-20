@@ -1,7 +1,10 @@
 # Intercom Conversations Export
 
-This is a little script that exports conversations from Intercom and saves them
-as `.txt` files.
+This is a copy of a script that exports conversations from Intercom and saves them
+as `.txt` files from TheArtling.
+
+See their original here:
+https://github.com/TheArtling/intercom-conversations-export
 
 ## Configuration
 
@@ -42,3 +45,6 @@ Landed on https://theartling.com/en/art/?country=japan
 06/01/2020 10:44 AM | Operator - bot : The Artling typically replies in a day.
 09/01/2020 18:37 PM | Operator - admin : Action - assignment
 ```
+TODO:
+- Add search by Year/Month/Day
+- Add anonymisation feature on folder names
